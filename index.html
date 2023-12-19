@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+
+    <div class="signup-form">
+        <h2>For Individuals</h2>
+        <p>Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+        <form action="/submit_form" method="post">
+            <input type="text" name="first-name" placeholder="First Name" value="Tolu">
+            <input type="text" name="last-name" placeholder="Last Name">
+            <select name="gender">
+                <option value="" disabled selected>Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type='date' name='dob' placeholder='Select here'>
+            <input type='number' name='weight' placeholder='Enter Weight'>
+            <input type='number' name='height' placeholder='Enter height here...'>
+            <select id = "activityLevel"> 
+                <option value="" disabled selected>Select here</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select> 
+            <label for="passwordField">Password</label>
+            <div class = "password-container">
+                <span class = "eye-icon"></span>
+                <input type = "password" id = "passwordField">
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
